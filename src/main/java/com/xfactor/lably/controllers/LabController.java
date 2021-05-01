@@ -17,20 +17,20 @@ public class LabController {
     ArrayList<Lab> labs = new ArrayList<>();
 
     @PostMapping("/addLabs")
-    public Lab addAdmin(@RequestBody Lab A1) {
+    public Lab addLabs(@RequestBody Lab A1) {
         labs.add(A1);
         return A1;
     }
 
 
     @GetMapping("/getLabs")
-    public ArrayList<Lab> getAdmin() {
+    public ArrayList<Lab> getLabs() {
         for(int i =0;i<5;i++)
         {
             Lab obj=new Lab();
             obj.setName("SM");
-            obj.setAddress("Howrah");
             obj.setPhone("1010101010");
+            obj.setAddress("Howrah");
             obj.setPincode("000000");
             labs.add(obj);
         }
@@ -38,7 +38,7 @@ public class LabController {
     }
 
     @GetMapping("/getLabs/{name}")
-    public Lab getAdmin(@PathVariable String name) {
+    public Lab getLabs(@PathVariable String name) {
         Lab res=new Lab();
         for (Lab k : labs) 
         { 

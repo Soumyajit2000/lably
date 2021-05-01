@@ -25,12 +25,12 @@ public class AdminController {
 
     @GetMapping("/getAdmin")
     public ArrayList<admin> getAdmin() {
-        for(int i =0;i<5;i++)
+        for(int i=0;i<5;i++)
         {
             admin obj=new admin();
-            obj.setName("kkk");
-            obj.setPassword("lolz");
-            obj.setUser("k.k.k");
+            obj.setName("SM");
+            obj.setUsername("SM2000");
+            obj.setPassword("0000");
             admins.add(obj);
         }
         return admins;
