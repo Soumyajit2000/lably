@@ -28,10 +28,10 @@ public class LabController {
         for(int i =0;i<5;i++)
         {
             Lab obj=new Lab();
-            obj.setName("kkk");
-            obj.setAddress("Kolkata");
-            obj.setPhone("9090909090909");
-            obj.setPincode("123456");
+            obj.setName("SM");
+            obj.setAddress("Howrah");
+            obj.setPhone("1010101010");
+            obj.setPincode("000000");
             labs.add(obj);
         }
         return labs;
