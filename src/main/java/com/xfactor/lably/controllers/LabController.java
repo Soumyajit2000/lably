@@ -16,14 +16,14 @@ public class LabController {
 
     ArrayList<Lab> labs = new ArrayList<>();
 
-    @PostMapping("/addAdmin")
+    @PostMapping("/addLabs")
     public Lab addAdmin(@RequestBody Lab A1) {
         labs.add(A1);
         return A1;
     }
 
 
-    @GetMapping("/getAdmin")
+    @GetMapping("/getLabs")
     public ArrayList<Lab> getAdmin() {
         for(int i =0;i<5;i++)
         {
@@ -37,7 +37,7 @@ public class LabController {
         return labs;
     }
 
-    @GetMapping("/getAdmin/{name}")
+    @GetMapping("/getLabs/{name}")
     public Lab getAdmin(@PathVariable String name) {
         Lab res=new Lab();
         for (Lab k : labs) 
